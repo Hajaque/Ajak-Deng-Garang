@@ -155,3 +155,246 @@ footer { background: #091d2e; color: #bdcbd4; padding: 24px 0; }
   .facts { grid-template-columns: 1fr; }
   .footer-inner { flex-direction: column; }
 }
+/* =========================================
+   CONTACT SECTION
+   ========================================= */
+
+.contact-section {
+    background: #102a43;
+    color: #ffffff;
+    padding: 75px 20px;
+}
+
+
+/* =========================================
+   CONTACT DETAILS - FLEXBOX
+   ========================================= */
+
+.contact-details {
+    width: 100%;
+    max-width: 1050px;
+    margin: 35px auto 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 16px;
+}
+
+
+/* =========================================
+   ALL CONTACT BUTTONS
+   ========================================= */
+
+.contact-item,
+.social-link {
+    flex: 1 1 280px;
+    min-width: 250px;
+    min-height: 65px;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 12px 18px;
+
+    /* MAROON BACKGROUND */
+    background: #7a1730 !important;
+
+    border: 2px solid #8f2945;
+    border-radius: 12px;
+
+    /* FORCE TEXT TO BE VISIBLE */
+    color: #ffffff !important;
+
+    text-decoration: none !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transition: all 0.3s ease;
+}
+
+
+/* =========================================
+   MAKE ALL TEXT INSIDE BUTTONS WHITE
+   ========================================= */
+
+.contact-item span,
+.social-link span {
+    color: #ffffff !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    display: inline-block;
+
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================
+   HOVER EFFECT
+   ========================================= */
+
+.contact-item:hover,
+.social-link:hover {
+    background: #4f0d20 !important;
+
+    border-color: #ffffff;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================
+   EMAIL / PHONE ICON
+   ========================================= */
+
+.contact-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    background: #102a43;
+
+    color: #ffffff !important;
+
+    border-radius: 50%;
+
+    font-size: 19px;
+    font-weight: bold;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Icon hover */
+
+.contact-item:hover .contact-icon {
+    background: #ffffff;
+    color: #7a1730 !important;
+
+    transform: scale(1.08);
+}
+
+
+/* =========================================
+   SOCIAL MEDIA LOGOS
+   ========================================= */
+
+.social-link img {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+
+    display: block !important;
+
+    object-fit: contain;
+
+    background: #ffffff;
+
+    border-radius: 50%;
+
+    padding: 5px;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Logo hover */
+
+.social-link:hover img {
+    transform: scale(1.12);
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .contact-details {
+        gap: 12px;
+    }
+
+    .contact-item,
+    .social-link {
+        flex: 1 1 45%;
+        min-width: 220px;
+    }
+}
+
+
+@media (max-width: 520px) {
+
+    .contact-details {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .contact-item,
+    .social-link {
+        width: 100%;
+
+        min-width: 0;
+
+        flex: 1 1 100%;
+    }
+
+    .contact-item span,
+    .social-link span {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+   ========================================= */
+
+@media (max-width: 360px) {
+
+    .contact-item,
+    .social-link {
+        padding: 10px 12px;
+        gap: 10px;
+    }
+
+    .contact-icon,
+    .social-link img {
+        width: 38px;
+        height: 38px;
+        min-width: 38px;
+    }
+
+    .contact-item span,
+    .social-link span {
+        font-size: 13px;
+    }
+}
