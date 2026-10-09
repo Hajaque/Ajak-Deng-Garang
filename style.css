@@ -398,3 +398,23 @@ footer { background: #091d2e; color: #bdcbd4; padding: 24px 0; }
         font-size: 13px;
     }
 }
+/* WhatsApp */
+.social-link.whatsapp:hover {
+  background: rgba(37, 211, 102, 0.18);
+  border-color: #25d366;
+  transform: translateX(6px);
+}
+
+/* LinkedIn */
+.social-link.linkedin:hover {
+  background: rgba(10, 102, 194, 0.20);
+  border-color: #0a66c2;
+  transform: translateX(6px);
+}
+
+/* X */
+.social-link.x-social:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: white;
+  transform: translateX(6px);
+}
